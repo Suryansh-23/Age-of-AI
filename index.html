@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="./img/artificial-intelligence.png"
+      type="image/x-icon"
+    />
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/cv.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/cover.css" />
+    <link rel="stylesheet" href="./styles/headers.css" />
+    <link rel="stylesheet" href="./styles/heores.css" />
+    <link rel="stylesheet" href="./styles/placeholder.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Age of Artificial Intelligence</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="text-white" style="background-color: #141416;">
+    <header
+      id="nav-header"
+      class="p-3 text-white position-fixed w-100 top-0"
+      style="z-index: 10;"
+    >
+      <div class="container w-100">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+              <title>Artificial Intelligence</title>
+          <a
+            href="#Home"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+          <img
+          src="./img/artificial-intelligence.png"
+          width="40"
+          height="40"
+          fill="white"
+          viewBox="0 0 16 16"
+        >
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 fs-5"
+          >
+            <li>
+              <a href="#Home" class="nav-link px-3 text-secondary">Home</a>
+            </li>
+            <li>
+              <a href="#Features" class="nav-link px-3 text-white">Features</a>
+            </li>
+            <li>
+              <a href="#Data for AI" class="nav-link px-3 text-white">Data For AI</a>
+            </li>
+            <li>
+              <a href="#Computer Vision" class="nav-link px-3 text-white">Computer Vision</a>
+            </li>
+            <li>
+              <a href="#NLP" class="nav-link px-3 text-white">NLP</a>
+            </li>
+            <li>
+              <a href="#Contact Us" class="nav-link px-3 text-white">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="d-flex flex-column position-relative">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input 
+                id="search_box"
+                type="search"
+                class="form-control form-control-dark"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </form>
+            <div id="search_results" class="list-group position-absolute visually-hidden-focusable" style="margin-top: 2.75rem;width: 20rem; max-height: 10rem; overflow-y: scroll">
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="Home"
+      class="d-flex flex-column position-relative w-100 my-5"
+      style="height: 100vh;"
+    >
+      <div class="my-5 mx-5">
+        <h1 class="fade-in-left" style="font-size: 5rem;">
+          The Age of <br />
+          Artificial Intelligence
+        </h1>
+        <h3 class="my-4 fade-in-left" style="animation-delay: 0.3s;">
+          Where machines<br />
+          Come to life
+        </h3>
+        <button
+          id="down_btn"
+          type="button"
+          class="btn btn-light fade-in-left fs-4"
+          style="animation-delay: 0.6s;"
+        >
+          <i class="bi bi-arrow-down"></i>
+        </button>
+      </div>
+      <div class="position-absolute w-100 coverimg" />
+    </section>
+
+    <section class="mx-5" style="margin-top: 30vh;" id="Features">
+      <div class="container g-0" style="height: 85vh;">
+        <div class="row g-0 h-100">
+          <div class="col-6 border border-opacity-10 d-flex position-relative">
+            <div
+              class="flex-column text-right my-auto mx-auto fade-in-left"
+              style="width: 20rem;"
+            >
+              <h2>
+                What is AI?
+              </h2>
+              <p font-size="24px">
+                Artificial intelligence is intelligence demonstrated by
+                machines, as opposed to the natural intelligence displayed by
+                animals including humans. It is the ability of a computer or a
+                robot controlled by a computer to do tasks that are usually done
+                by humans because they require human intelligence and
+                discernment.
+              </p>
+            </div>
+            <img
+              class="placeholder-col1-bg"
+              src="./img/el1bg.webp"
+              alt="Col-1-bg"
+            />
+          </div>
+          <div
+            class="col-3 d-flex flex-column align-items-end border-top border-bottom border-opacity-10"
+          >
+            <div class="position-relative" style="top: -5rem;">
+              <div
+                class="card shadow mb-3 text-black"
+                data-aos="fade-up-right"
+                data-aos-duration="1000"
+                style="
+                  width: 15rem;
+                  height: 20rem;
+                  border-radius: 0.75rem;
+                  background-color: #1b1c1e;
+                "
+              >
+                <div
+                  class="card-body rounded-5 d-flex flex-column"
+                  data-aos="fade-right"
+                  data-aos-duration="850"
+                >
+                  <i class="bi bi-robot fs-1" style="color: #fd6262;"></i>
+                  <div
+                    class="mt-auto"
+                    data-aos="fade-right"
+                    data-aos-duration="850"
+                  >
+                    <h5
+                      data-aos="fade-right"
+                      data-aos-duration="850"
+                      class="card-title mt-2"
+                      style="color: #889ce7 !important;"
+                    >
+                      Why AI?
+                    </h5>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-duration="850"
+                      class="card-text mb-1"
+                      style="color: #858585;"
+                    >
+                      Aritificial Intelligence allows organizations to make
+                      better decisions, improving core business processes by
+                      increasing both the speed and accuracy of strategic
+                      decision-making processes.
+                    </p>
+                    <span
+                      data-aos="fade-right"
+                      data-aos-duration="850"
+                      class="placeholder placeholder-xs col-9 rounded-2"
+                      style="background-color: #8b8c8d !important;"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card shadow mb-3 text-black"
+                data-aos="fade-up-right"
+                data-aos-duration="1000"
+                style="
+                  width: 15rem;
+                  height: 20rem;
+                  border-radius: 0.75rem;
+                  background-color: #1b1c1e;
+                "
+              >
+                <div
+                  class="card-body rounded-5 d-flex flex-column"
+                  data-aos="fade-right"
+                  data-aos-duration="850"
+                >
+                  <i class="bi bi-robot fs-1" style="color: #fd6262;"></i>
+                  <div class="mt-auto">
+                    <h5
+                      data-aos="fade-right"
+                      data-aos-duration="850"
+                      class="card-title mt-2"
+                      style="color: #889ce7 !important;"
+                    >
+                      AI in Everyday Life
+                    </h5>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-duration="850"
+                      class="card-text mb-1"
+                      style="color: #858585;"
+                    >
+                      Voice assistants, image recognition for face unlock in
+                      cellphones, and ML-based financial fraud detection are
+                      examples of AI software currently being used in everyday
+                      life.
+                    </p>
+                    <span
+                      data-aos="fade-right"
+                      data-aos-duration="850"
+                      class="placeholder placeholder-xs col-9 rounded-2"
+                      style="background-color: #8b8c8d;"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 border border-start-0 border-opacity-10">
+            <div
+              class="h-100 position-relative d-flex flex-column justify-content-end overflow-hidden"
+              style="bottom: -5rem; animation-delay: 0.5s;"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            >
+              <div
+                class="card shadow mb-3 text-black ms-3"
+                data-aos="fade-left"
+                data-aos-duration="850"
+                style="
+                  width: 15rem;
+                  height: 20rem;
+                  border-radius: 0.75rem;
+                  background-color: #1b1c1e;
+                  animation-delay: inherit;
+                "
+              >
+                <div
+                  class="card-body rounded-5"
+                  data-aos="fade-left"
+                  data-aos-duration="850"
+                  style="animation-delay: inherit;"
+                >
+                  <i class="bi bi-robot fs-1" style="color: #fd6262;"></i>
+                  <h5
+                    data-aos="fade-left"
+                    data-aos-duration="850"
+                    class="card-title mt-2"
+                    style="color: #889ce7 !important;"
+                  >
+                    Current State of AI
+                  </h5>
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="850"
+                    class="card-text mb-2"
+                    style="color: #858585;"
+                  >
+                    AI adoption is continuing its steady rise: 56 percent of all
+                    respondents (of a 2021 survey) report AI adoption in at
+                    least one function. The global AI adoption rate grew
+                    steadily and now is at 35%.
+                  </p>
+                  <span
+                    data-aos="fade-left"
+                    data-aos-duration="850"
+                    class="placeholder placeholder-xs col-9 rounded-2"
+                    style="background-color: #8b8c8d;"
+                  ></span>
+                </div>
+              </div>
+              <div
+                class="card shadow mb-3 text-black ms-3"
+                data-aos="fade-left"
+                data-aos-duration="850"
+                style="
+                  width: 15rem;
+                  height: 20rem;
+                  border-radius: 0.75rem;
+                  background-color: #1b1c1e;
+                  animation-delay: inherit;
+                "
+              >
+                <div
+                  class="card-body rounded-5"
+                  data-aos="fade-left"
+                  data-aos-duration="850"
+                  style="animation-delay: inherit;"
+                >
+                  <i class="bi bi-robot fs-1" style="color: #fd6262;"></i>
+                  <h5
+                    data-aos="fade-left"
+                    data-aos-duration="850"
+                    class="card-title mt-2"
+                    style="color: #889ce7 !important;"
+                  >
+                    Future of AI
+                  </h5>
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="850"
+                    class="card-text mb-1"
+                    style="color: #858585;"
+                  >
+                    AI is ready to become the main component of various emerging
+                    technologies like big data, robotics, and IoT. It will
+                    continue to act as a technological innovator in the coming
+                    years.
+                  </p>
+                  <span
+                    data-aos="fade-left"
+                    data-aos-duration="850"
+                    class="placeholder placeholder-xs col-9 rounded-2"
+                    style="background-color: #8b8c8d;"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="width: 100%; margin-top: 15rem;" id="Data for AI">
+      <div
+        style="
+          text-align: center;
+          color: rgba(255, 255, 255, 0.75);
+          font-family: 'Anonymous Pro', monospace;
+          white-space: nowrap;
+          position: relative;
+          transform: translateY(-50%);
+        "
+        class="line-1 anim-typewriter"
+      >
+        <h1 style="font-size: 50px;">DOMAINS OF AI</h1>
+      </div>
+      <div
+        class="container col-xxl-12 px-6"
+        style="margin-top: 0px; margin-bottom: 50px;"
+      >
+        <div class="row flex-lg-row-reverse align-items-center g-5" style="margin-top: 0px; margin-bottom: 0px;">
+          <div class="col-10 col-lg-6 col-lg-6">
+            <img
+              src="./img/AI-Gives-Better-Insight-into-Data.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="500"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              DATA FOR AI
+            </h1>
+            <p class="lead">
+              AI works on a variety of data. It requires humongous amount of
+              data, which is termed as "Big Data". Data is of three types,
+              namely, Visual, Textual, and Numerical. As the name suggests,
+              Visual data is made up of images and tagged by what they contain.
+              Textual data is specific to the linguistic world, and Numerical
+              data is made up of figures and measurements.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a
+                href="https://www.oracle.com/in/big-data/what-is-big-data/#:~:text=Big%20data%20defined,-What%20exactly%20is&text=The%20definition%20of%20big%20data,especially%20from%20new%20data%20sources."
+                target="_blank"
+              >
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2"
+                >
+                  More About Big Data
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="margin-top: 0rem; width: 100%;" id="Computer Vision">
+      <h1 style="font-size: 50px; text-align: center; margin-top:0px; font-family: Anonymous Pro,monospace; margin-bottom: 25px">COMPUTER VISION</h1>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="contnr position-relative">
+          <div
+            id="box"
+            class="h-100 d-flex flex-row justify-content-center align-items-center bg-secondary rounded-3"
+          >
+            <div class="fs-3">
+              <span
+                >Would you like to generate a live face mesh of your face?</span
+              >
+              <div class="d-flex justify-content-center mt-3">
+                <button id="Yep" type="button" class="btn btn-success me-3">
+                  Yes
+                </button>
+                <button id="Nope" type="button" class="btn btn-danger ms-3">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+          <canvas
+            class="output_canvas rounded-3"
+            width="1280px"
+            height="720px"
+          ></canvas>
+          <video class="input_video"></video>
+          <span class="position-absolute rounded-3" id="fps"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="NLP" class="my-5 w-100 position-relative" style="height: 80vh;">
+      <div class="container g-0 w-100 h-100">
+        <div
+          class="row g-0 h-100"
+          style="margin-top: 75px; margin-bottom: 0px;"
+        >
+          <div class="col-6">
+            <div class="p-5 text-white bg-dark rounded-3">
+              <h1>Natural Language Processing</h1>
+              <p style="font-size: 18px;">
+                Natural language processing is a subfield of linguistics,
+                computer science, and artificial intelligence concerned with the
+                interactions between computers and human language, in particular
+                how to program computers to process and analyze large amounts of
+                natural language data. NLP has two sub-parts:<br />
+                1. Natural Language Understanding (NLU): It is related to how
+                machines understand given information.<br />
+                2. Natural Language Generation (NLG): It is realted to how
+                machines generate output as per the given information.<br />
+                <br />
+                #FunFact: AI machines find NLG to be easier than NLU, whereas
+                human beings find Understanding to be easier than Generating.
+              </p>
+              <a
+                href="https://www.ibm.com/cloud/learn/natural-language-processing"
+                target="_blank"
+              >
+                <button class="btn btn-outline-light btn-lg" type="button">
+                  More About NLP
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <div
+              class="position-relative box-rotate"
+              style="width: 25rem; height: 25rem;"
+            >
+              <div
+                class="position-absolute"
+                style="transform: translate(-50%, -50%); left: 50%;"
+              >
+                <img class="img-rotate" src="./img/ga.png" alt="va" />
+              </div>
+              <div
+                class="position-absolute"
+                style="transform: translate(50%, -50%); top: 50%; right: 100%;"
+              >
+                <img class="img-rotate" src="./img/alexa.png" alt="va" />
+              </div>
+              <div
+                class="position-absolute"
+                style="transform: translate(-50%, -50%); top: 50%; left: 100%;"
+              >
+                <img class="img-rotate" src="./img/cortana.svg" alt="va" />
+              </div>
+              <div
+                class="position-absolute"
+                style="transform: translate(-50%, -50%); top: 100%; left: 50%;"
+              >
+                <img class="img-rotate" src="./img/siri.webp" alt="va" />
+              </div>
+              <div
+                class="position-absolute"
+                style="transform: translate(-50%, -50%); top: 100%; left: 50%;"
+              >
+                <img class="img-rotate" src="./img/siri.webp" alt="va" />
+              </div>
+              <div
+                class="position-fixed rounded-circle d-flex justify-content-center align-items-center"
+                style="transform: translate(-50%, -50%); top: 50%; left: 50%;"
+              >
+                <img
+                  class="img-rotate rounded-circle"
+                  src="./img/ai.webp"
+                  alt="va"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Contact Us" class="pb-5" style="margin-top: 0px;">
+      <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="d-flex flex-row">
+          <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">Contact Us</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="fs-5 mb-4">
+                Use the form on right to contact us. Ask us anything by first
+                entering your e-mail so that we can reply you promptly. Also
+                briefly describe your issue/praise/query.
+              </p>
+            </div>
+          </div>
+          <div id="about-form" class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-light">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Your E-mail address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="subjectInput"
+                  placeholder="Subject"
+                />
+                <label for="subject">Subject</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Please Type your Message"
+                  id="messageInput"
+                  style="height: 100px;"
+                ></textarea>
+                <label for="messageInput">Please Type your Message</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" id="contact-submit">
+                Submit
+              </button>
+              <hr class="my-4" />
+              <small class="text-muted"
+                >You Hereby submit some of your private information.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="d-flex align-items-center">
+            <a
+              href="#Home"
+              class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"
+            >
+            <img
+                src="./img/artificial-intelligence.png"
+                width="30"
+                height="30"
+                fill="black"
+                viewBox="0 0 16 16"
+              >
+            </img>
+            </a>
+            <span class="text-white">&copy; 2022</span>
+          </div>
+          <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+            <li class="nav-item">
+              <a href="#Home" class="nav-link px-2 text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Features" class="nav-link px-2 text-white">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Data for AI" class="nav-link px-2 text-white">Data for AI</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Computer Vision" class="nav-link px-2 text-white">Computer Vision</a>
+            </li>
+            <li class="nav-item">
+              <a href="#NLP" class="nav-link px-2 text-white">NLP</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Contact Us" class="nav-link px-2 text-white">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="nav justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-white"
+                href="https://twitter.com"
+                target="_Blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="white"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-white"
+                href="https://www.facebook.com/"
+                target="_Blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="white"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-white"
+                href="https://www.instagram.com/"
+                target="_Blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="white"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+    <section id="toast">
+      <div
+        class="position-fixed bottom-0 end-0 p-3"
+        style="z-index: 20 !important;"
+      >
+        <div
+          id="liveToast"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <img
+                src="./img/artificial-intelligence.png"
+                width="30"
+                height="30"
+                fill="black"
+                viewBox="0 0 16 16"
+              >
+              <rect width="100%" height="100%" fill="#007aff"></rect>
+            </img>
+            <strong style="margin-left: 5px;">Artificial Intelligence</strong>
+            <small style="margin-left: 87px;">Now</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body text-black" style="background-color: white;">
+            Hurrah, You've connected with us. Your Query will be replied
+            shortly.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <script src="./src/cv.js" type="module"></script>
+    <script src="./src/app.js"></script>
+    <script src="./src/contact.js"></script>
+    <script type="text/javascript">
+      let already_set = false;
+      document.onscroll = () => {
+        if (scrollY !== 0 && !already_set) {
+          document.getElementById("nav-header").classList.add("nav-bg");
+          already_set = true;
+        } else if (scrollY === 0 && already_set) {
+          document.getElementById("nav-header").classList.remove("nav-bg");
+          already_set = false;
+        }
+      };
+
+      document.getElementById("down_btn").onclick = () =>
+        scrollBy(0, screen.height);
+    </script>
+  </body>
+</html>

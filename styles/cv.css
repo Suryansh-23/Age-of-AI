@@ -1,0 +1,24 @@
+.contnr {
+    width: 1280px;
+    height: 720px;
+}
+
+.input_video {
+    display: none;
+}
+
+.output_canvas {
+    /* width: 100vw; */
+}
+
+#fps {
+    display: none;
+    bottom: 1%;
+    right: 1%;
+    padding: 10px;
+    background-color: black;
+}
+
+#box {
+    z-index: 3;
+}

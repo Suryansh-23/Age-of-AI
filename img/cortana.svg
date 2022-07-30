@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="svg2985" version="1.1" inkscape:version="0.48.5 r10040" width="746.75" height="751.625" sodipodi:docname="Cortana.png">
+  <metadata id="metadata2991">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs id="defs2989" />
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="706" id="namedview2987" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="0.612" inkscape:cx="1107.0351" inkscape:cy="441.98448" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg2985" />
+  <g id="g3010" transform="translate(732.03513,0)">
+    <path inkscape:connector-curvature="0" id="path2997" d="m -358.66013,0 c -206.20436,0 -373.375,168.2545 -373.375,375.8125 0,207.558 167.17064,375.8125 373.375,375.8125 206.20435,0 373.374999,-168.2545 373.374999,-375.8125 C 14.714869,168.2545 -152.45578,0 -358.66013,0 z m 0,73.53125 c 165.86002,0 300.312499,135.33242 300.312499,302.28125 0,166.94883 -134.452479,302.28125 -300.312499,302.28125 -165.86003,0 -300.3125,-135.33242 -300.3125,-302.28125 0,-166.94883 134.45247,-302.28125 300.3125,-302.28125 z" style="fill:#9adaf6;fill-opacity:1;stroke:none" />
+    <path inkscape:connector-curvature="0" id="path3000" d="m -358.66013,73.53125 c -165.86003,0 -300.3125,135.33242 -300.3125,302.28125 0,166.94883 134.45247,302.28125 300.3125,302.28125 165.86002,0 300.312499,-135.33242 300.312499,-302.28125 0,-166.94883 -134.452479,-302.28125 -300.312499,-302.28125 z m 0,62.09375 c 131.79148,0 238.625,107.53086 238.625,240.1875 0,132.65664 -106.83352,240.1875 -238.625,240.1875 -131.79149,0 -238.625,-107.53086 -238.625,-240.1875 0,-132.65664 106.83351,-240.1875 238.625,-240.1875 z" style="fill:#1c9fe7;fill-opacity:1;stroke:none" />
+  </g>
+</svg>

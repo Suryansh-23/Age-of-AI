@@ -1,0 +1,81 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+}
+
+#sub-main {
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  margin-left: 4em;
+  position: relative;
+}
+
+#carousel {
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  background-color: black;
+}
+
+#title {
+  position: relative;
+  z-index: 3;
+  height: 0;
+}
+
+#features {
+  max-width: 960px;
+  margin: auto;
+}
+
+#placeholder {
+  margin-right: 4em;
+}
+
+/* #globe {
+    border: 15px solid #057ab1;
+} */
+
+iframe {
+  width: 100%;
+  height: 790px;
+}
+
+#about-form {
+  margin-right: 5em !important;
+}
+
+.nav-bg {
+  background: rgba(51, 60 112, 0.2);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(10px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.box-rotate {
+  animation: rotate 7s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img-rotate {
+  animation: rotate 7s linear infinite reverse;
+  width: 6rem;
+  height: 6rem;
+}
+
+.highlight {
+  background-color: rgba(255, 255, 0, 1);
+}
