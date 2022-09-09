@@ -1,6 +1,6 @@
 .coverimg {
     z-index: -1;
-    background-image: url(../img/cover-bg.jpg);
+    background-image: url(./img/cover-bg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100%;
