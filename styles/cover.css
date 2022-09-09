@@ -1,6 +1,6 @@
 .coverimg {
     z-index: -1;
-    background-image: url("https://suryansh-23.github.io/Age-of-AI/img/cover-bg.jpg");
+    background-image: url(../img/cover-bg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100%;
